@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Internal - BPS Kota Cirebon</title>
+    <style>
+        /* Pengaturan Dasar & Dark Mode */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        /* Navigasi / Header Atas */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #1e1e1e;
+            border-bottom: 1px solid #333;
+        }
+        .navbar-logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar-menu a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+        }
+        .navbar-menu a:hover {
+            color: #64b5f6;
+        }
+
+        /* Banner Utama */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop') center/cover;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        /* Pembatas Seksi */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #ffffff;
+            margin: 50px 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Grid Layout untuk Kotak-kotak */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            padding: 0 40px;
+            max-width: 1200px;
+            margin: 0 auto 50px;
+        }
+
+        /* Desain Kartu (Card) */
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+            border-color: #64b5f6;
+        }
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            color: #64b5f6; /* Biru terang agar kontras di dark mode */
+            margin: 0 0 10px;
+            font-size: 1.1rem;
+        }
+        .card p {
+            color: #a0a0a0;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Kartu Khusus Tautan Eksternal (Biru Solid) */
+        .card.external {
+            background-color: #1976d2;
+            border: none;
+        }
+        .card.external:hover {
+            background-color: #1565c0;
+        }
+        .card.external h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-logo">
+            📊 SIMPONI BPS Kota Cirebon
+        </div>
+        <div class="navbar-menu">
+            <a href="#">Home</a>
+            <a href="#">Inovasi</a>
+            <a href="#" style="color: #64b5f6; border-bottom: 2px solid #64b5f6; padding-bottom: 5px;">Layanan Internal</a>
+            <a href="#">Monitoring</a>
+            <a href="#">RB dan Kinerja</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Layanan Internal</h1>
+    </div>
+
+    <h2 class="section-title">Kinerja</h2>
+    <div class="grid-container">
+        <div class="card"><div class="icon">⬆️</div><h3>Upload SKP 2026</h3><p>Form Upload SKP 2026</p></div>
+        <div class="card"><div class="icon">📝</div><h3>Monitoring SKP</h3><p>Monitoring Pengumpulan SKP</p></div>
+        <div class="card"><div class="icon">👏</div><h3>SKP-KIPAPP</h3><p>Surat Kinerja Pegawai</p></div>
+        <div class="card"><div class="icon">📅</div><h3>Kalender Kegiatan</h3><p>Kalender Tim Kerja</p></div>
+    </div>
+
+    <h2 class="section-title">Kepegawaian</h2>
+    <div class="grid-container">
+        <div class="card"><div class="icon">🏢</div><h3>KP Provinsi</h3><p>Kenaikan Pangkat Provinsi</p></div>
+        <div class="card"><div class="icon">🪙</div><h3>KGB</h3><p>Kenaikan Gaji Berkala</p></div>
+        <div class="card"><div class="icon">💬</div><h3>PAK Integrasi</h3><p>Penetapan Angka Kredit Integrasi</p></div>
+        <div class="card"><div class="icon">👤</div><h3>KEKEPAN</h3><p>Kebutuhan Kepegawaian Terdepan</p></div>
+        <div class="card"><div class="icon">🚑</div><h3>BPJS Tambahan</h3><p>BPJS Tambahan Keluarga Lainnya</p></div>
+    </div>
+
+    <h2 class="section-title">Keuangan</h2>
+    <div class="grid-container" style="max-width: 600px;">
+        <div class="card"><div class="icon">🌐</div><h3>Matriks Perjadin</h3><p>Matriks Perjalanan Dinas</p></div>
+        <div class="card"><div class="icon">🧑‍💼</div><h3>Matriks Mitra</h3><p>Matriks Mitra</p></div>
+    </div>
+
+    <h2 class="section-title">Umum</h2>
+    <div class="grid-container">
+        <div class="card"><div class="icon">📁</div><h3>Surat Keputusan</h3><p>Kumpulan Surat Keputusan</p></div>
+        <div class="card"><div class="icon">✉️</div><h3>Template Surat</h3><p>Template Surat Menyurat</p></div>
+        <div class="card"><div class="icon">🚩</div><h3>Apel</h3><p>Dokumentasi Apel Pagi</p></div>
+        <div class="card"><div class="icon">📄</div><h3>SIRATU</h3><p>Sistem Surat Satu Pintu</p></div>
+        <div class="card"><div class="icon">👨‍💻</div><h3>Rapat Dinas</h3><p>Dokumentasi Rapat Dinas</p></div>
+        <div class="card"><div class="icon">🛋️</div><h3>Pesan Ruang Rapat</h3><p>Pemesanan Ruang Rapat</p></div>
+        <div class="card"><div class="icon">📘</div><h3>Pelatihan</h3><p>Laporan Pelatihan Petugas</p></div>
+        <div class="card"><div class="icon">🛡️</div><h3>Regulasi</h3><p>Regulasi BPS Kota Cirebon</p></div>
+        <div class="card"><div class="icon">📊</div><h3>Materi Pimpinan</h3><p>Penyiapan Materi Pimpinan</p></div>
+        <div class="card"><div class="icon">📢</div><h3>SPIP</h3><p>Penanganan SPIP</p></div>
+        <div class="card"><div class="icon">✅</div><h3>Quality Gates</h3><p>Laporan Quality Gates</p></div>
+        <div class="card"><div class="icon">✏️</div><h3>Kebutuhan ATK/CS</h3><p>Kebutuhan ATK/Computer Supply</p></div>
+    </div>
+
+    <h2 class="section-title">Tautan Eksternal</h2>
+    <div class="grid-container">
+        <div class="card external"><div class="icon">🗺️</div><h3>SIPECUT-BPS</h3></div>
+        <div class="card external"><div class="icon">🧩</div><h3>Back Office</h3></div>
+        <div class="card external"><div class="icon">🆔</div><h3>SIMPEG-BPS</h3></div>
+        <div class="card external"><div class="icon">⏫</div><h3>Kip App</h3></div>
+        <div class="card external"><div class="icon">🤝</div><h3>Community</h3></div>
+        <div class="card external"><div class="icon">🎯</div><h3>Coretax</h3></div>
+        <div class="card external"><div class="icon">⚛️</div><h3>MyASN-BKN</h3></div>
+        <div class="card external"><div class="icon">📝</div><h3>Ujian Kompetensi</h3></div>
+        <div class="card external"><div class="icon">☕</div><h3>E-Warkop</h3></div>
+    </div>
+
+    <div class="footer">
+        Hak Cipta © 2026 Badan Pusat Statistik Kota Cirebon
+    </div>
+
+</body>
+</html>
